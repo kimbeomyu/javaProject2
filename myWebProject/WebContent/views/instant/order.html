@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	 <h1> 오늘의 메뉴 </h1>
+    <table border="1">
+        <tr>
+            <th> 메뉴 </th>
+            <th> 품목 </th>
+            <th> 가격 </th>
+        </tr>
+        <tr>
+            <td rowspan="3"> 메인 메뉴 </td>
+            <td> 한우버거 </td>
+            <td> 5000원 </td>
+        </tr>
+        <tr>
+            <td> 밥버거</td>
+            <td> 4500원 </td>
+        </tr>
+        <tr>
+            <td> 치즈버거 </td>
+            <td> 4000원 </td>
+        </tr>
+        <tr>
+            <td rowspan="2"> 사이드 메뉴 </td>
+            <td> 감자튀김 </td>
+            <td> 1500원 </td>
+        </tr>
+        <tr>
+            <td>어니언링</td>
+            <td>1700원</td>
+        </tr>
+        <tr>
+            <td rowspan="4">음료메뉴</td>
+            <td>콜라</td>
+            <td>1000원</td>
+        </tr>
+        <tr>
+            <td>사이다</td>
+            <td>1000원</td>
+        </tr>
+        <tr>
+            <td>커피</td>
+            <td>1500원</td>
+        </tr>
+        <tr>
+            <td>밀크쉐이크</td>
+            <td>2500원</td>
+        </tr>
+    </table><br><br>
+
+    <form action="/order" method="get">
+    메인메뉴 :
+    
+    <select name="burger"> 
+        <option value="햄버거를 선택해주세요"> 햄버거를 선택하세요 </option>
+        <option value="한우버거">한우버거</option>
+        <option value="밥버거">밥버거</option>
+        <option value="치즈버거">치즈버거</option>
+    </select> <br><br>
+
+    사이드 메뉴 :
+    <select name="side">
+        <option value="사이드 메뉴를 선택해주세요">사이드메뉴를 선택해주세요</option>
+        <option value="감자튀김">감자튀김</option>
+        <option value="어니언링">어니언링</option>
+    </select> <br><br>
+
+    음료메뉴
+    <select name="dringk">
+        <option value="음료를 선택해주세요">음료를 선택해주세요</option>
+        <option value="콜라">콜라</option>
+        <option value="사이다">사이다</option>
+        <option value="커피"> 커피 </option>
+        <option value="밀크쉐이크"> 밀크쉐이크 </option>
+    </select><br><br>
+
+    <input type="submit" value="주문">
+    <input type="reset" value="취소">
+    </form>
+</body>
+</html>
